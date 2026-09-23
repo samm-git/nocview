@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "dev.asamorukov.nocview"
+    namespace = "dev.sammgit.nocview"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "dev.asamorukov.nocview"
+        applicationId = "dev.sammgit.nocview"
         minSdk = 31
         targetSdk = 35
         versionCode = 1

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NOC View</string>
+    <string name="widget_label">NOC View status</string>
+    <string name="widget_description">Hosts, services and problem totals at a glance.</string>
+</resources>

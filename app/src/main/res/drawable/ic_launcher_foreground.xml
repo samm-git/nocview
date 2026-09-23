@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Monitor / status board glyph, centered in the 72dp safe zone -->
+    <path
+        android:fillColor="#3DDC84"
+        android:pathData="M34,32h40a4,4 0 0 1 4,4v30a4,4 0 0 1 -4,4h-40a4,4 0 0 1 -4,-4v-30a4,4 0 0 1 4,-4zM34,38v26h40v-26z" />
+    <path
+        android:fillColor="#3DDC84"
+        android:pathData="M46,74h16v4h-16zM40,78h28v4h-28z" />
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M40,44h6v14h-6z" />
+    <path
+        android:fillColor="#3DDC84"
+        android:pathData="M51,44h6v14h-6z" />
+    <path
+        android:fillColor="#FF5252"
+        android:pathData="M62,44h6v14h-6z" />
+</vector>

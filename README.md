@@ -79,6 +79,26 @@ to verify the URL and credentials.
 - Glance + WorkManager (home-screen widget)
 - MVVM + StateFlow + coroutines/Flow
 
+## Releases
+
+Tagged releases (`v*`) are built and published automatically by GitHub Actions
+(`.github/workflows/release.yml`). The workflow produces an installable release
+APK and attaches it to the GitHub Release and to the workflow run as an artifact.
+It can also be run manually from the Actions tab.
+
+To sign releases with your own key, add these repository secrets:
+
+- `KEYSTORE_BASE64` — your keystore, base64-encoded (`base64 -w0 keystore.jks`)
+- `KEYSTORE_PASSWORD`
+- `KEY_ALIAS`
+- `KEY_PASSWORD`
+
+If `KEYSTORE_BASE64` is not set, the release APK is signed with the debug key so
+it stays installable for testing.
+
+Pull requests and pushes to `main` run the `CI` workflow
+(`.github/workflows/ci.yml`): unit tests, lint and a debug build.
+
 ## License
 
 Released under the [MIT License](LICENSE).

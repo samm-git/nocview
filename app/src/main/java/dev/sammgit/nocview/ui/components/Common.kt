@@ -274,11 +274,21 @@ fun OutputText(text: String, modifier: Modifier = Modifier) {
 private val timestampFormatter: DateTimeFormatter =
     DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
 
+private val shortTimestampFormatter: DateTimeFormatter =
+    DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm")
+
 fun formatTimestamp(epochMs: Long?): String {
     if (epochMs == null || epochMs <= 0) return "—"
     return Instant.ofEpochMilli(epochMs)
         .atZone(ZoneId.systemDefault())
         .format(timestampFormatter)
+}
+
+fun formatTimestampShort(epochMs: Long?): String {
+    if (epochMs == null || epochMs <= 0) return "—"
+    return Instant.ofEpochMilli(epochMs)
+        .atZone(ZoneId.systemDefault())
+        .format(shortTimestampFormatter)
 }
 
 fun formatRelative(epochMs: Long?): String {

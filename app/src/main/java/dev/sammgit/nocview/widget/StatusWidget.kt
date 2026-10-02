@@ -27,7 +27,7 @@ import androidx.glance.unit.ColorProvider
 import dagger.hilt.android.EntryPointAccessors
 import dev.sammgit.nocview.MainActivity
 import dev.sammgit.nocview.data.local.MetaEntity
-import dev.sammgit.nocview.ui.components.formatRelative
+import dev.sammgit.nocview.ui.components.formatTimestampShort
 
 private val Background = ColorProvider(Color(0xFF11161C))
 private val TitleColor = ColorProvider(Color(0xFF8AB4F8))
@@ -106,7 +106,7 @@ private fun WidgetContent(meta: MetaEntity?) {
             )
             Spacer(GlanceModifier.height(4.dp))
             Text(
-                text = "$problems problems · ${formatRelative(meta.lastUpdated)}",
+                text = "$problems problems · updated ${formatTimestampShort(meta.lastUpdated)}",
                 style = TextStyle(
                     color = if (problems > 0) ProblemColor else OkColor,
                     fontSize = 13.sp,
